@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/mobileA.css">
+    <link rel="stylesheet" href="css/mobileB.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/subway.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div id="wrap">
+
+        <!-- <div id="mobile_splash">
+            <video src="img/eventmenu_video_last.mp4" autoplay muted></video>
+        </div> -->
+
+        <!-- //////////////////////////// 숨김메뉴 //////////////////////////// -->
+
+        <div id="hidemenu_bg">
+
+            <div id="hidemenu_box">
+
+                <div id="hidemenu_right">
+                    <div id="hidemenu_video"><video src="img/eventmenu_video_1.mp4" autoplay muted></video></div>
+                    <div id="hidemenu_close"><img src="img/popup_close.png" alt="이미지"></div>
+                </div>
+
+                <div id="hidemenu_left">
+
+                    <ul id="hide_menu_wrap">
+
+                        <li class="hide_mainmenu bottom_border"><a href="#">써브웨이</a>
+                            <ul class="hide_submenu">
+                                <li><a href="#">써브웨이 스토리</a></li>
+                                <li><a href="#">써브웨이 약속</a></li>
+                                <li><a href="#">써브웨이 지원</a></li>
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li class="hide_mainmenu bottom_border right_border_x"><a href="#">메뉴</a>
+                            <ul class="hide_submenu">
+                                <li><a href="#">샌드위치</a></li>
+                                <li><a href="#">샐러드</a></li>
+                                <li><a href="#">아침메뉴</a></li>
+                                <li><a href="#">단체메뉴</a></li>
+                                <li><a href="#">랩&기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="hide_mainmenu"><a href="#">소식</a>
+                            <ul class="hide_submenu">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">뉴스&공지사항</a></li>
+                                <li><a href="#">광고&홍보영상</a></li>
+                            </ul>
+                        </li>
+                        <li class="hide_mainmenu right_border_x"><a href="#">가맹점</a>
+                            <ul class="hide_submenu">
+                                <li><a href="#">프랜차이즈</a></li>
+                                <li><a href="#">가맹신청&문의</a></li>
+                                <li><a href="#">지사안내</a></li>
+                                <li><a href="#">사업설명회</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <ul id="hidemenu_login">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- //////////////////////////// sec02 메뉴 클릭시 나오는 팝업창 ////////////////////////////-->
+
+        <div id="menupopup_wrap">
+
+
+            <!-- ////////////////// MENU_A 샌드위치 클릭 팝업  ////////////////// -->
+
+            <div id="menuA_sandwich" class="menu_popup">
+
+                <div class="menu_popup_inbox">
+
+                    <div class="menu_popup_logo"><img src="img/logo_sub_header.png" alt="이미지"></div>
+                    <div class="menu_popup_line"></div>
+                    <div class="menu_popup_title">SANDWICH</div>
+                    <img src="img/popup_close.png" alt="이미지" class="menu_popup_close">
+
+                    <!-- https://codesandbox.io/s/f78yv4?file=/index.html:1469-2127 -->
+                    <div class="swiper mySwiper menu_slide_wrap">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_01.jpg" alt="이미지" class="sandwich_img">
+                                <h1>쉬림프</h1>
+                                <span class="menu_eng">Shrimp</span>
+                                <span class="menu_kcal">229Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_02.jpg" alt="이미지" class="sandwich_img">
+                                <h1>스테이크&치즈</h1>
+                                <span class="menu_eng">Steak & Cheese</span>
+                                <span class="menu_kcal">355Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_03.jpg" alt="이미지" class="sandwich_img">
+                                <h1>터키 베이컨 아보카도</h1>
+                                <span class="menu_eng">Turkey Bacon Avocado</span>
+                                <span class="menu_kcal">349Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_04.jpg" alt="이미지" class="sandwich_img">
+                                <h1>스파이시 이탈리안</h1>
+                                <span class="menu_eng">Spicy Italian</span>
+                                <span class="menu_kcal">464Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_05.jpg" alt="이미지" class="sandwich_img">
+                                <h1>치킨 데리야끼</h1>
+                                <span class="menu_eng">Chicken Teriyaki </span>
+                                <span class="menu_kcal">314Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/sandwich_06.jpg" alt="이미지" class="sandwich_img">
+                                <h1>풀드 포크 바비큐</h1>
+                                <span class="menu_eng">Pulled Pork Barbecue</span>
+                                <span class="menu_kcal">327Kcal</span>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next">
+
+
+                            <!-- <img src="img/menu_right_btn.png"> -->
+                        </div>
+                        <div class="swiper-button-prev">
+                            <!-- <img src="img/menu_left_btn.png"> -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ////////////////// MENU_B 샐러드 클릭 팝업  ////////////////// -->
+
+            <div id="menuB_salad" class="menu_popup">
+
+                <div class="menu_popup_inbox">
+
+                    <div class="menu_popup_logo"><img src="img/logo_sub_header.png" alt="이미지"></div>
+                    <div class="menu_popup_line"></div>
+                    <div class="menu_popup_title">SALAD</div>
+                    <img src="img/popup_close.png" alt="이미지" class="menu_popup_close">
+
+                    <!-- https://codesandbox.io/s/f78yv4?file=/index.html:1469-2127 -->
+                    <div class="swiper mySwiper menu_slide_wrap">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_01.png" alt="이미지" class="salad_img">
+                                <h1>베지 샐러드</h1>
+                                <span class="menu_eng">Veggie Delite™ salad</span>
+                                <span class="menu_kcal">46.7Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_02.png" alt="이미지" class="salad_img">
+                                <h1>로스트치킨 샐러드</h1>
+                                <span class="menu_eng">Roasted Chicken salad</span>
+                                <span class="menu_kcal">138Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_03.png" alt="이미지" class="salad_img">
+                                <h1>쉬림프 샐러드</h1>
+                                <span class="menu_eng">Shrimp salad</span>
+                                <span class="menu_kcal">66.9Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_04.png" alt="이미지" class="salad_img">
+                                <h1>에그마요 샐러드</h1>
+                                <span class="menu_eng">Shrimp salad</span>
+                                <span class="menu_kcal">254Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_05.png" alt="이미지" class="salad_img">
+                                <h1>스테이크 & 치즈 샐러드</h1>
+                                <span class="menu_eng">Steak & Cheese salad</span>
+                                <span class="menu_kcal">193Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/salad_06.png" alt="이미지" class="salad_img">
+                                <h1>스파이시 이탈리안 샐러드</h1>
+                                <span class="menu_eng">Spicy Italian salad</span>
+                                <span class="menu_kcal">302Kcal</span>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ////////////////// MENU_C 랩 클릭 팝업  ////////////////// -->
+
+            <div id="menuC_wrap" class="menu_popup">
+
+                <div class="menu_popup_inbox">
+
+                    <div class="menu_popup_logo"><img src="img/logo_sub_header.png" alt="이미지"></div>
+                    <div class="menu_popup_line"></div>
+                    <div class="menu_popup_title">WRAP</div>
+                    <img src="img/popup_close.png" alt="이미지" class="menu_popup_close">
+
+                    <!-- https://codesandbox.io/s/f78yv4?file=/index.html:1469-2127 -->
+                    <div class="swiper mySwiper menu_slide_wrap">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_01.png" alt="이미지" class="wrap_img">
+                                <h1>치킨 베이컨 미니 그릴드 랩</h1>
+                                <span class="menu_eng">Chicken Bacon Mini Grilled Wrap</span>
+                                <span class="menu_kcal">392Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_02.png" alt="이미지" class="wrap_img">
+                                <h1>치킨 베이컨 미니 랩</h1>
+                                <span class="menu_eng">Chicken Bacon Mini Wrap</span>
+                                <span class="menu_kcal">391Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_03.png" alt="이미지" class="wrap_img">
+                                <h1>쉬림프 에그 그릴드 랩</h1>
+                                <span class="menu_eng">Shrimp Egg Grilled Wrap</span>
+                                <span class="menu_kcal">366Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_04.png" alt="이미지" class="wrap_img">
+                                <h1>쉬림프 에그마요 랩</h1>
+                                <span class="menu_eng">Shrimp Egg Mayo Wrap</span>
+                                <span class="menu_kcal">506Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_05.png" alt="이미지" class="wrap_img">
+                                <h1>스테이크&치즈 아보카도 그릴드 랩</h1>
+                                <span class="menu_eng">Steak & Cheese Avocado Grilled Wrap</span>
+                                <span class="menu_kcal">473Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/wrap_06.png" alt="이미지" class="wrap_img">
+                                <h1>스테이크&치즈 아보카도 랩</h1>
+                                <span class="menu_eng">Steak&Cheese Avocado Wrap</span>
+                                <span class="menu_kcal">478Kcal</span>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ////////////////// MENU_D 기타 클릭 팝업  ////////////////// -->
+
+            <div id="menuD_etc" class="menu_popup">
+
+                <div class="menu_popup_inbox">
+
+                    <div class="menu_popup_logo"><img src="img/logo_sub_header.png" alt="이미지"></div>
+                    <div class="menu_popup_line"></div>
+                    <div class="menu_popup_title">etc.</div>
+                    <img src="img/popup_close.png" alt="이미지" class="menu_popup_close">
+
+                    <!-- https://codesandbox.io/s/f78yv4?file=/index.html:1469-2127 -->
+                    <div class="swiper mySwiper menu_slide_wrap">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_01.png" alt="이미지" class="etc_img">
+                                <h1>탄산음료</h1>
+                                <span class="menu_eng">Soda</span>
+                                <span class="menu_kcal"></span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_02.png" alt="이미지" class="etc_img">
+                                <h1>커피</h1>
+                                <span class="menu_eng">Coffee</span>
+                                <span class="menu_kcal"></span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_03.png" alt="이미지" class="etc_img">
+                                <h1>화이트 초코 마카다미아</h1>
+                                <span class="menu_eng">White Choco Macadamia</span>
+                                <span class="menu_kcal">245Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_04.png" alt="이미지" class="etc_img">
+                                <h1>더블 초코칩</h1>
+                                <span class="menu_eng">Double Chocolate Chip</span>
+                                <span class="menu_kcal">212Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_05.png" alt="이미지" class="etc_img">
+                                <h1>베이크 포테이토 수프</h1>
+                                <span class="menu_eng">Baked Potato Soup</span>
+                                <span class="menu_kcal">181Kcal</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="img/etc_06.png" alt="이미지" class="etc_img">
+                                <h1>머쉬룸 수프</h1>
+                                <span class="menu_eng">Mushroom Soup</span>
+                                <span class="menu_kcal">147Kcal</span>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next popupmenu_next"></div>
+                        <div class="swiper-button-prev popupmenu_prev"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var swiper = new Swiper(".menu_slide_wrap", {
+                slidesPerView: 3,
+                // spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    960: {
+                        slidesPerView: 3,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    }
+                },
+                //swiper tab 적용하려고 display:none 했을 때
+                //무조건 써야하는 속성값
+                observer: true,
+                observeParents: true,
+            });
+        </script>
+
+
+        <!-- //////////////////////////// 헤더 //////////////////////////// -->
+        <header>
+
+            <div id="header_wrap">
+                <div id="header_logo"><a href="#"><img src="img/logo_sidemenu.png" alt="이미지"></a></div>
+                <ul id="menu_wrap">
+                    <li class="mainmenu"><a href="#">써브웨이</a>
+                        <ul class="submenu">
+                            <li><a href="#">써브웨이 스토리</a></li>
+                            <li><a href="#">써브웨이 약속</a></li>
+                            <li><a href="#">써브웨이 지원</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu"><a href="#">메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">샌드위치</a></li>
+                            <li><a href="#">샐러드</a></li>
+                            <li><a href="#">아침메뉴</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                            <li><a href="#">랩&기타</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu"><a href="#">소식</a>
+                        <ul class="submenu">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">뉴스&공지사항</a></li>
+                            <li><a href="#">광고&홍보영상</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu"><a href="#">가맹점</a>
+                        <ul class="submenu">
+                            <li><a href="#">프랜차이즈</a></li>
+                            <li><a href="#">가맹신청&문의</a></li>
+                            <li><a href="#">지사안내</a></li>
+                            <li><a href="#">사업설명회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul id="loginmenu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+
+                <a href="#"><img src="img/hidemenu_btn.png" alt="이미지" id="hidemenu_btn"></a>
+
+            </div>
+
+        </header>
+
+
+        <!-- //////////////////////////// 섹션01 - 메인광고 //////////////////////////// -->
+
+        <section id="sec01">
+
+            <div id="sec01_bot_yellow"></div>
+
+            <div id="sec01_con">
+
+                <div id="macbook_video">
+                    <video src="img/subway_video.mp4" autoplay muted loop></video>
+                    <img src="img/macbook wide.png" alt="이미지" id="macbook">
+                </div>
+
+                <img src="img/kado_shadow.png" alt="이미지" id="kado_shadow">
+                <img src="img/kado2.png" alt="이미지" id="kado">
+
+                <!-- 이벤트메뉴 슬라이드 -->
+                <div id="eventmenu_wrap">
+
+                    <div id="eventmenu_slide_box">
+
+                        <div class="eventmenu" id="eventmenu_A">
+                            <div class="event_text slide01_text">햄 콤보</div><br>
+                            <div class="event_price slide01_price">5,300원</div>
+                            <div class="event_img"><img src="img/eventmenu_01.png" alt="이미지"></div>
+                        </div>
+
+                        <div class="eventmenu" id="eventmenu_B">
+                            <div class="event_text">베지 아보카도</div><br>
+                            <div class="event_price">5,400원</div>
+                            <div class="event_img"><img src="img/eventmenu_02.png" alt="이미지"></div>
+                        </div>
+
+                        <div class="eventmenu" id="eventmenu_C">
+                            <div class="event_text">터키 베이컨 아보카도</div><br>
+                            <div class="event_price">5,300원</div>
+                            <div class="event_img"><img src="img/eventmenu_03.png" alt="이미지"></div>
+                        </div>
+
+                        <div class="eventmenu" id="eventmenu_D">
+                            <div class="event_text">로스트 치킨 아보카도</div><br>
+                            <div class="event_price">7,700원</div>
+                            <div class="event_img"><img src="img/eventmenu_04.png" alt="이미지"></div>
+                        </div>
+
+                    </div>
+
+                    <div id="eventmenu_btn_box">
+                        <div class="slide_button" id="slide_next"><img src="img/eventmenu_btn_R.png" alt="이미지"></div>
+                        <div class="slide_button" id="slide_prev"><img src="img/eventmenu_btn_L.png" alt="이미지"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <script>
+            var swiper = new Swiper("#eventmenu_wrap", {
+                effect: "fade",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // loop: true,
+            });
+        </script>
+
+
+
+        <!-- //////////////////////////// 섹션02 - 메뉴 //////////////////////////// -->
+
+        <section id="sec02">
+
+            <div id="sec02_title">SUBWAY MENU</div>
+
+            <!-- <div id="sec02_bglogo"><img src="img/logo_w.png" alt="이미지"></div> -->
+
+            <div id="sec02_menuwrap">
+
+                <div id="circle_text"><img src="img/circle text.svg" alt="이미지"></div>
+
+                <!-- <div id="circle_dot"><img src="img/circle dot.svg" alt="이미지"></div> -->
+
+                <!-- 7. class 형식 이름 주기 -->
+                <div id="sec02_menuA" class="subway_menu">
+                    <div id="circle_dot"><img src="img/circle dot.svg" alt="이미지"></div>
+                    <div class="sec02_menu_Ltext">SANDWICH</div>
+                    <!-- <div class="sec02_menu_Ltext"><img src="img/SANDWICH_text.png" alt="이미지"></div> -->
+                    <div class="sec02_menu_Stext">샌드위치</div>
+                    <div class="sec02_menu_img imgW m_sandwich"><img src="img/sandwich01.png" alt="이미지"></div>
+                </div>
+
+                <div id="sec02_menuB" class="subway_menu">
+                    <div id="circle_dot"><img src="img/circle dot.svg" alt="이미지"></div>
+                    <div class="sec02_menu_Ltext salad_Ltext">SALAD</div>
+                    <!-- <div class="sec02_menu_Ltext"><img src="img/SALAD_text.png" alt="이미지"></div> -->
+                    <div class="sec02_menu_Stext salad_Stext">샐러드</div>
+                    <div class="sec02_menu_img imgW m_salad"><img src="img/salad01.png" alt="이미지"></div>
+                </div>
+
+                <div id="sec02_menuC" class="subway_menu">
+                    <div id="circle_dot"><img src="img/circle dot.svg" alt="이미지"></div>
+                    <div class="sec02_menu_Ltext wrap_Ltext">WRAP</div>
+                    <!-- <div class="sec02_menu_Ltext wrap_Ltext"><img src="img/WRAP_text.png" alt="이미지"></div> -->
+                    <div class="sec02_menu_Stext wrap_Stext">랩</div>
+                    <div class="sec02_menu_img imgH m_wrap"><img src="img/wrap01.png" alt="이미지"></div>
+                </div>
+
+                <div id="sec02_menuD" class="subway_menu">
+                    <div id="circle_dot"><img src="img/circle dot.svg" alt="이미지"></div>
+                    <div class="sec02_menu_Ltext etc_Ltext">etc.</div>
+                    <!-- <div class="sec02_menu_Ltext"><img src="img/etc_text.png" alt="이미지"></div> -->
+                    <div class="sec02_menu_Stext etc_Stext">기타</div>
+                    <div class="sec02_menu_img imgH m_etc"><img src="img/etc menu.png" alt="이미지"></div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+        <!-- //////////////////////////// 섹션03 - 스토리 //////////////////////////// -->
+        <section id="sec03">
+
+            <div class="sec03_box" id="sec03_box1">
+
+                <div class="sec03_imgbox"><img src="img/story.jpg" alt="이미지"></div>
+
+                <div class="sec03_textwrap">
+                    <div class="sec03_maintext">STORY</div>
+                    <!-- <div class="sec03_maintext"><img src="img/STORY_text.png" alt="이미지"></div> -->
+                    <div class="sec03_subtext">50년 역사를 가진<br>No.1 프랜차이즈의 성장기</div>
+                </div>
+
+            </div>
+
+            <div class="sec03_box" id="sec03_box2">
+
+                <div class="sec03_imgbox"><img src="img/event02.jpg" alt="이미지"></div>
+
+                <div class="sec03_textwrap">
+                    <div class="sec03_maintext">EVENT</div>
+                    <!-- <div class="sec03_maintext"><img src="img/EVENT_text.png" alt="이미지"></div> -->
+                    <div class="sec03_subtext">다양하게 진행 중인<br>써브웨이만의 이벤트</div>
+                </div>
+
+            </div>
+
+            <div class="sec03_box" id="sec03_box3">
+
+                <div class="sec03_imgbox"><img src="img/store2.png" alt="이미지"></div>
+
+                <div class="sec03_textwrap">
+                    <div class="sec03_maintext">STORE</div>
+                    <!-- <div class="sec03_maintext"><img src="img/STORE_text.png" alt="이미지"></div> -->
+                    <div class="sec03_subtext">근처에 있는 써브웨이를<br>편리하게 찾아보세요</div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- //////////////////////////// 섹션04 - 프랜차이즈 //////////////////////////// -->
+        <section id="sec04">
+
+            <div id="sec04_boxwrap">
+
+                <!-- 9. background-image -->
+                <div id="sec04_leftbox">
+
+                    <img src="img/franchise_main.png" alt="이미지">
+
+                    <div id="leftbox_textwrap">
+                        <img src="img/franchise logo.png" alt="이미지">
+                        <div id="leftbox_underline"></div>
+                        <div id="leftbox_textup">전세계 37,525여개 매장으로 검증된</div>
+                        <div id="leftbox_textdown">글로벌 No.1 프랜차이즈 써브웨이</div>
+                    </div>
+                </div>
+
+                <div id="sec04_rightbox">
+
+                    <!-- 10. background-image  /  노란선같이-->
+                    <div class="sec04_R_smallbox franchise01">
+
+                        <div class="smallbox_img"><img src="img/franchise01.png" alt="이미지"></div>
+
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">강동구 상일동점</div>
+                            <!-- <div class="sec04_smallbox_textdown">OPEN</div> -->
+                            <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 10. background-image  /  노란선같이-->
+                    <div class="sec04_R_smallbox franchise02">
+
+                        <div class="smallbox_img"><img src="img/franchise02.png" alt="이미지"></div>
+
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">세종시청점</div>
+                            <!-- <div class="sec04_smallbox_textdown">OPEN</div> -->
+                            <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- 10. background-image  /  노란선같이-->
+                    <div class="sec04_R_smallbox franchise03">
+
+                        <div class="smallbox_img"><img src="img/franchise03.png" alt="이미지"></div>
+
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">산본사거리점</div>
+                            <!-- <div class="sec04_smallbox_textdown">OPEN</div> -->
+                            <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="sec04_bottom_box">
+
+                    <div class="franchise_slide"><img src="img/store01.jpg" alt="이미지">
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">강동구 상일동점</div>
+                            <div class="sec04_smallbox_textdown">OPEN</div>
+                            <!-- <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="franchise_slide"><img src="img/store02.png" alt="이미지">
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">세종시청점</div>
+                            <div class="sec04_smallbox_textdown">OPEN</div>
+                            <!-- <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="franchise_slide"><img src="img/store03.jpg" alt="이미지">
+                        <div class="sec04_smallbox_textwrap">
+                            <div class="sec04_smallbox_textup">산본사거리점</div>
+                            <div class="sec04_smallbox_textdown">OPEN</div>
+                            <!-- <div class="sec04_smallbox_textdown"><img src="img/franchise_open.png" alt="이미지"></div> -->
+                        </div>
+                    </div>
+
+                    <!-- button -->
+                    <div class="franchise_btn" id="franchise_prev">◀</div>
+                    <div class="franchise_btn" id="franchise_next">▶</div>
+
+                </div>
+
+            </div>
+
+            <!-- //////////////////////////// 푸터 //////////////////////////// -->
+            <footer>
+                <div id="footer_left">
+
+                    <ul id="footer_up">
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>써브카드</li>
+                        <li>점주관리자</li>
+                        <li>Subway Listens</li>
+                    </ul>
+
+                    <ul id="footer_down">
+                        <li>서울시 서초구 강남대로 535 프린스빌딩 15층 대표 : 안명선 전화 : 02-797-5036 사업자등록번호 : 101-84-04143</li>
+                        <li>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights
+                            Reserved.</li>
+                    </ul>
+
+                </div>
+
+                <div id="footer_right">
+                    <div class="footer_sns_box"><img src="img/facebook.png" alt="이미지"></div>
+                    <div class="footer_sns_box"><img src="img/instagram.png" alt="이미지"></div>
+                    <div class="footer_sns_box"><img src="img/youtube.png" alt="이미지"></div>
+                </div>
+            </footer>
+
+        </section>
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
